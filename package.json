@@ -14,5 +14,5 @@
     "test": "node test"
   },
   "author": "Isaac Cambron",
-  "license": "MIT"
+  "license": "GNU AFFERO"
 }
