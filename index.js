@@ -1,5 +1,9 @@
 module.exports = addNumbers;
 
-function addNumbers(first, second) {
-  return first + second;
+function addNumbers(first, second, callback) {
+  if (callback) {
+    setImmediate(function () { callback(first + second); });
+  } else {
+    return first + second;
+  }
 }
